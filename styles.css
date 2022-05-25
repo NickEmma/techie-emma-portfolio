@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
 :root {
-  --white: #fff;
+  --green: #36b37e;
+  --dark-blue: #172b4d;
 }
 * {
   margin: 0;
@@ -10,4 +13,93 @@
   border: none;
   text-decoration: none;
   transition: all 0.2s linear;
+  font-family: 'Inter', sans-serif;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  width: 375px;
+  height: 100vh;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  padding: 2rem 9%;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(59, 58, 58);
+}
+.header .navbar .menu {
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+section {
+  position: relative;
+  top: 75px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-image: url(./images/capt.png);
+  width: 375px;
+  height: 492px;
+  background-repeat: repeat-y;
+  background-position: 100px right;
+  background-size: cover;
+}
+section .hero h1 {
+  padding-top: 30px;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+}
+section .hero h1 span {
+  color: var(--green);
+}
+section .hero p {
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+}
+section .social-icon {
+  padding-top: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+section .social-icon img {
+  width: 20px;
+  cursor: pointer;
+  color: var(--green);
+}
+section .social-icon img:hover {
+  color: var(--dark-blue);
+}
+section .angle {
+  padding-top: 60px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section .angle img {
+  width: 30px;
 }
