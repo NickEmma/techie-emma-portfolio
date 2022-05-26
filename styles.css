@@ -103,10 +103,6 @@ section .social-icon img {
   color: var(--green);
 }
 
-section .angle {
-  list-style: none;
-}
-
 section .angle img {
   width: 30px;
 }
