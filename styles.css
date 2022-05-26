@@ -146,8 +146,8 @@ section .angle {
 
 .works .box-container .box {
   text-align: center;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .works .box-container .box .image {
@@ -233,7 +233,7 @@ section .angle {
   width: 68px;
 }
 
-.about .profile h1 {
+.about .profile h2 {
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
