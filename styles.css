@@ -203,6 +203,11 @@ section .angle {
   border-radius: 3px;
 }
 
+.about .btn:hover {
+  background: #19744e;
+  color: #fff;
+}
+
 .works .box-container .box .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -213,16 +218,6 @@ section .angle {
   font-size: 1.3rem;
   padding: 1rem 1.5rem;
   border-radius: 3px;
-}
-
-.works .box-container .box .btn:hover {
-  background: #19744e;
-  color: #fff;
-}
-
-.about .btn:hover {
-  background: #19744e;
-  color: #fff;
 }
 
 .about {
