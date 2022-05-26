@@ -37,6 +37,7 @@ body {
   padding: 2rem 9%;
   align-items: center;
   justify-content: space-between;
+  background: #fff;
 }
 
 .header .logo {
@@ -51,9 +52,9 @@ body {
   cursor: pointer;
 }
 
-section {
+section .hero {
   position: relative;
-  top: 75px;
+  top: 60px;
   padding-left: 24px;
   padding-right: 24px;
   background-image: url(./images/capt.png);
@@ -112,7 +113,7 @@ section .social-icon img:hover {
 }
 
 section .angle {
-  padding-top: 60px;
+  padding-top: 25px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -121,7 +122,7 @@ section .angle {
 }
 
 .works .indicator {
-  padding: 60px;
+  padding: 85px;
   text-align: center;
 }
 
@@ -145,6 +146,8 @@ section .angle {
 
 .works .box-container .box {
   text-align: center;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .works .box-container .box .image {
@@ -165,6 +168,7 @@ section .angle {
   text-align: center;
   border: 1px solid #808080;
 }
+
 .works .box-container .box h3 {
   font-size: 2rem;
   color: var(--dark-blue);
@@ -200,6 +204,171 @@ section .angle {
 }
 
 .works .box-container .box .btn:hover {
-  background: #2bca88;
+  background: #19744e;
   color: #fff;
+}
+
+.about {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.about .side-1 {
+  position: absolute;
+  top: 20px;
+  right: -1rem;
+  width: 68px;
+}
+
+.about .profile h1 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  color: var(--dark-blue);
+  text-align: center;
+  padding-top: 35px;
+}
+
+.about .profile p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: #42526e;
+}
+
+.about .side-2 {
+  position: absolute;
+  bottom: 0;
+  left: -1.5rem;
+  width: 78px;
+}
+
+.about .profile .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid var(--green);
+  color: #fff;
+  cursor: pointer;
+  background: var(--green);
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+}
+
+.about .about .btn:hover {
+  background: #19744e;
+  color: #fff;
+}
+
+.skills .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.skills .row .col {
+  text-align: center;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 30px;
+}
+
+.skills .row .col .lang {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills .row .col .lang img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.skills .row .col .lang .icons {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+  text-align: center;
+}
+
+.skills .row .col .lang .icons .frame {
+  width: 80px;
+  padding-bottom: 40px;
+}
+
+.skills .row .col .lang h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #344563;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.skills .row .col .lang ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 10px;
+}
+
+.skills .row .col .lang ul li {
+  padding: 0.5rem;
+  border: 0.1rem solid #fff;
+  background: #fff;
+  color: var(--green);
+}
+
+.skills .row .col .lang ul li a {
+  color: var(--green);
+}
+
+.skills .row .col .lang {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills .row .col .lang img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.skills .row .col .lang .icons-1 {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  padding-left: 24px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.skills .row .col .lang .icons-1 .frame {
+  width: 80px;
+  padding-bottom: 40px;
+}
+
+.skills .row .col .lang .icons-2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding-left: 24px;
+  padding-right: 48px;
+  text-align: center;
+}
+
+.skills .row .col .lang .icons-2 .frame {
+  width: 80px;
+  padding-bottom: 40px;
 }
