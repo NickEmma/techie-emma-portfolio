@@ -108,6 +108,12 @@ section .angle img {
   width: 30px;
 }
 
+.works .indicator img {
+  width: 35px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
 section .social-icon img:hover {
   color: var(--dark-blue);
 }
@@ -130,12 +136,6 @@ section .angle {
   font-size: 3rem;
   font-weight: 700;
   color: var(--dark-blue);
-}
-
-.works .indicator img {
-  width: 35px;
-  font-weight: 700;
-  padding-top: 15px;
 }
 
 .works .box-container {
@@ -189,6 +189,18 @@ section .angle {
   padding: 0.5rem;
   border: 0.1rem solid #f7f2f2;
   background: #d8dbda;
+}
+
+.about .profile .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid var(--green);
+  color: #fff;
+  cursor: pointer;
+  background: var(--green);
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
 }
 
 .works .box-container .box .btn {
@@ -247,19 +259,7 @@ section .angle {
   width: 78px;
 }
 
-.about .profile .btn {
-  margin-top: 1rem;
-  display: inline-block;
-  border: 0.2rem solid var(--green);
-  color: #fff;
-  cursor: pointer;
-  background: var(--green);
-  font-size: 1.3rem;
-  padding: 1rem 1.5rem;
-  border-radius: 3px;
-}
-
-.about .about .btn:hover {
+.about .btn:hover {
   background: #19744e;
   color: #fff;
 }
@@ -330,19 +330,6 @@ section .angle {
 
 .skills .row .col .lang ul li a {
   color: var(--green);
-}
-
-.skills .row .col .lang {
-  height: 25rem;
-  overflow: hidden;
-  position: relative;
-}
-
-.skills .row .col .lang img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
 }
 
 .skills .row .col .lang .icons-1 {
