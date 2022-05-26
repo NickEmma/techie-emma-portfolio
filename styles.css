@@ -4,6 +4,7 @@
   --green: #36b37e;
   --dark-blue: #172b4d;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -15,15 +16,18 @@
   transition: all 0.2s linear;
   font-family: 'Inter', sans-serif;
 }
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 body {
   width: 375px;
   height: 100vh;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -35,16 +39,19 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .header .logo {
   font-size: 2rem;
   font-weight: 600;
   color: rgb(59, 58, 58);
 }
+
 .header .navbar .menu {
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
 }
+
 section {
   position: relative;
   top: 75px;
@@ -57,15 +64,18 @@ section {
   background-position: 100px right;
   background-size: cover;
 }
+
 section .hero h1 {
   padding-top: 30px;
   font-size: 38px;
   font-weight: 700;
   text-align: center;
 }
+
 section .hero h1 span {
   color: var(--green);
 }
+
 section .hero p {
   padding-top: 30px;
   font-size: 18px;
@@ -73,6 +83,7 @@ section .hero p {
   text-align: center;
   line-height: 1.5;
 }
+
 section .social-icon {
   padding-top: 20px;
   display: flex;
@@ -84,14 +95,21 @@ section .social-icon {
   cursor: pointer;
   transition: 0.5s ease;
 }
+
 section .social-icon img {
   width: 20px;
   cursor: pointer;
   color: var(--green);
 }
+
+section .angle img {
+  width: 30px;
+}
+
 section .social-icon img:hover {
   color: var(--dark-blue);
 }
+
 section .angle {
   padding-top: 60px;
   display: flex;
@@ -99,7 +117,4 @@ section .angle {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
-section .angle img {
-  width: 30px;
 }
