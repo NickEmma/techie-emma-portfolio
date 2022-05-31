@@ -356,6 +356,8 @@ section .angle {
 }
 
 .contact .row {
+  display: flex;
+  flex-direction: column;
   padding-top: 3rem;
 }
 
