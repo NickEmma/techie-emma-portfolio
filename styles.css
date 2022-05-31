@@ -359,6 +359,7 @@ section .angle {
   display: flex;
   flex-direction: column;
   padding-top: 3rem;
+  text-align: center;
 }
 
 .contact .row h3 {
@@ -384,7 +385,7 @@ section .angle {
 }
 
 .contact .row textarea {
-  border: 1px solid #d0d9d4;
+  border: 1px solid #b4f0cf;
   border-radius: 4px;
   padding: 13px;
   margin-top: 15px;
@@ -393,19 +394,51 @@ section .angle {
   resize: none;
 }
 
-.contact .row .btn {
+.contact .row button {
   margin-top: 1rem;
   display: inline-block;
   border: 0.2rem solid var(--green);
   color: #fff;
   cursor: pointer;
   background: var(--green);
-  font-size: 1rem;
-  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  padding: 1.2rem 1.5rem;
   border-radius: 3px;
 }
 
-.contact .row .btn:hover {
+.contact .row button:hover {
   background: #19744e;
   color: #fff;
 }
+/* 
+.contact .row .side-image {
+  position: relative;
+  padding-top: 40px;
+}
+
+.contact .row .div-image {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.contact .row .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+.contact .row .social-link li a img {
+  width: 22px;
+  height: auto;
+  object-fit: cover;
+}
+
+.contact .row h4 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #42526e;
+  margin-bottom: 10px;
+} */
