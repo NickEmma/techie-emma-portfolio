@@ -155,6 +155,12 @@ section .angle {
   overflow: hidden;
 }
 
+.contact .row .social-link li a img {
+  width: 22px;
+  height: auto;
+  object-fit: cover;
+}
+
 .works .box-container .box .image img {
   height: 100%;
   width: 100%;
@@ -167,6 +173,14 @@ section .angle {
   padding: 2rem;
   text-align: center;
   border: 1px solid #808080;
+}
+
+.contact .row h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--dark-blue);
+  text-align: center;
+  padding: 0 30px;
 }
 
 .works .box-container .box h3 {
@@ -353,4 +367,80 @@ section .angle {
 .skills .row .col .lang .icons-2 .frame {
   width: 80px;
   padding-bottom: 40px;
+}
+
+.contact .row {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.contact .row form {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  margin: 0.7rem 0;
+}
+
+.contact .row form input {
+  padding: 13px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.contact .row textarea {
+  border: 1px solid #b4f0cf;
+  border-radius: 4px;
+  padding: 13px;
+  margin-top: 15px;
+  width: 100%;
+  height: 15rem;
+  resize: none;
+}
+
+.contact .row button {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid var(--green);
+  color: #fff;
+  cursor: pointer;
+  background: var(--green);
+  font-size: 1.5rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 3px;
+}
+
+.contact .row button:hover {
+  background: #19744e;
+  color: #fff;
+}
+
+.contact .row .side-image {
+  position: relative;
+  padding-top: 40px;
+}
+
+.contact .row .div-image {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.contact .row .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.contact .row h4 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #42526e;
+  margin-bottom: 10px;
 }
