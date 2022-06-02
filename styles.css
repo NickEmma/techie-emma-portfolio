@@ -343,11 +343,11 @@ section .angle {
   padding: 0.5rem;
   border: 0.1rem solid #fff;
   background: #fff;
-  color: var(--green);
+  color: #36b37e;
 }
 
 .skills .row .col .lang ul li a {
-  color: var(--green);
+  color: #36b37e;
 }
 
 .skills .row .col .lang .icons-1 {
@@ -463,7 +463,7 @@ section .angle {
   display: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .header {
     background: #fff;
     width: 100%;
@@ -486,6 +486,7 @@ section .angle {
     margin-left: 2rem;
     text-transform: capitalize;
     font-weight: 700;
+    color: var(--dark-blue);
   }
 
   .header .logo,
