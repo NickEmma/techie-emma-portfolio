@@ -659,11 +659,17 @@ section .angle {
     justify-content: center;
     width: 100%;
     list-style: none;
+    transition: 0.3s ease-in;
   }
 
   .contact footer .social-link li a img {
     width: 20px;
     margin-left: 1.5rem;
+    transform: translateY(-10px);
+  }
+
+  .contact footer .social-link li a img:hover {
+    transform: translateY(10px);
   }
 
   .contact footer h4 {
