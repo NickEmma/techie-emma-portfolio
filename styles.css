@@ -668,10 +668,6 @@ section .angle {
     transform: translateY(-10px);
   }
 
-  /* .contact footer .social-link li a img:hover {
-    transform: translateY(10px);
-  } */
-
   .contact footer h4 {
     display: none;
   }
