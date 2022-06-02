@@ -10,7 +10,7 @@ Html & Css
 
 ## Getting Started
 
-Hello Microverse is a project given to micronaut to test their knowledge on linters And also to produce a well arranged documentation on their code.
+Portfolio Website is a project given to micronaut to test their knowledge on HTML And CSS to teach them a mobile first approach and also to produce a well arranged documentation on their code.
 
 To get a local copy up and running follow these simple example steps.
 
