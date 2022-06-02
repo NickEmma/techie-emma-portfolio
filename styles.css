@@ -434,16 +434,24 @@ section .angle {
   right: 10px;
 }
 
-.contact .row .social-link {
+.contact footer {
+  text-align: center;
+}
+
+.contact footer .social-link {
   display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
   gap: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.contact .row h4 {
+.contact footer .social-link li a img {
+  width: 20px;
+}
+
+.contact footer h4 {
   font-weight: 400;
   font-size: 16px;
   color: #42526e;
@@ -465,18 +473,21 @@ section .angle {
     justify-content: center;
     text-align: center;
   }
+
   .header .navbar ul {
     display: flex;
     list-style: none;
     align-items: center;
     justify-content: center;
   }
+
   .header .navbar ul li a {
     font-size: 1.8rem;
     margin-left: 2rem;
     text-transform: capitalize;
     font-weight: 700;
   }
+
   .header .logo,
   .header .menu {
     display: none;
@@ -501,6 +512,7 @@ section .angle {
   .works .box-container .box {
     text-align: center;
   }
+
   .skills {
     width: 100%;
     max-width: 998px;
@@ -509,23 +521,28 @@ section .angle {
     grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
     gap: 20px;
   }
+
   .skills .row {
     width: 109%;
   }
+
   .skills .row .col {
     width: 100%;
     padding-left: 10px;
   }
+
   .skills .row .col .lang .icons-1 {
     width: 100%;
     padding-right: 20px;
     padding-left: 5px;
     left: 5px;
   }
+
   .skills .row .col .lang .icons {
     left: 45px;
     text-align: center;
   }
+
   .skills .icons-2 {
     width: 100%;
     padding-right: 20px;
@@ -563,11 +580,13 @@ section .angle {
   .works .indicator img {
     display: none;
   }
+
   .about {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 30px;
   }
+
   .about .profile p {
     padding-top: 30px;
     font-size: 20px;
@@ -579,14 +598,17 @@ section .angle {
     line-height: 32px;
     color: #42526e;
   }
+
   .about .side-1 {
     top: 0;
     width: 10%;
   }
+
   .about .side-2 {
     bottom: 0;
     width: 10%;
   }
+
   .contact .row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -602,16 +624,19 @@ section .angle {
     color: var(--dark-blue);
     padding-top: 100px;
   }
+
   .contact .row .box {
     position: relative;
     width: 100%;
   }
+
   .contact .row .div-img {
     position: absolute;
     bottom: -30px;
     left: 0;
     width: 110px;
   }
+
   .contact .row .div-img-2 {
     position: absolute;
     bottom: -30px;
@@ -619,11 +644,13 @@ section .angle {
     width: 110px;
     height: 54px;
   }
+
   .contact .row .div-img-2,
   .contact .row .div-img {
     display: block;
   }
-  .contact .social-link {
+
+  .contact footer .social-link {
     border-top: 1px solid #dfe1e6;
     padding-top: 20px;
     display: flex;
@@ -632,11 +659,13 @@ section .angle {
     width: 100%;
     list-style: none;
   }
-  .contact .social-link li a img {
+
+  .contact footer .social-link li a img {
     width: 20px;
     margin-left: 1.5rem;
   }
-  .contact .row h4 {
+
+  .contact footer h4 {
     display: none;
   }
 }
