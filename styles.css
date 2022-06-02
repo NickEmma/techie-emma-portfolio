@@ -24,7 +24,6 @@ html {
 
 body {
   min-width: 100%;
-  /* min-width: 375px; */
   height: 100vh;
 }
 
@@ -158,6 +157,10 @@ section .angle {
 .works .box-container .box .image {
   height: 25rem;
   overflow: hidden;
+}
+
+.contact footer .social-link li a img {
+  width: 20px;
 }
 
 .contact .row .social-link li a img {
@@ -446,10 +449,6 @@ section .angle {
   list-style: none;
   gap: 18px;
   margin-bottom: 10px;
-}
-
-.contact footer .social-link li a img {
-  width: 20px;
 }
 
 .contact footer h4 {
