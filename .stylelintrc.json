@@ -3,6 +3,13 @@
   "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
   "rules": {
     "at-rule-no-unknown": null,
+    "no-descending-specificity": [
+      true,
+      {
+        "ignore": "selectors-within-list",
+        "reportDisables": "true"
+      }
+    ],
     "scss/at-rule-no-unknown": [
       true,
       {
