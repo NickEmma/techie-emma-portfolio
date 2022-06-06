@@ -29,6 +29,10 @@ create .github/workflows folder in your first commit for the feature branch then
 - Twitter: [@twitterhandle](https://twitter.com/techieEmma)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/nicholas-emmanuel-6b9775207)
 
+### Live Demo
+
+[my-portfolio-website](https://nickemma.github.io/techie-emma-portfolio/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
