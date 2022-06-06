@@ -123,14 +123,14 @@ section .social-icon img:hover {
   color: var(--dark-blue);
 }
 
-section .angle {
+/* section .angle {
   padding-top: 25px;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
+} */
 
 .works .indicator {
   padding: 85px;
