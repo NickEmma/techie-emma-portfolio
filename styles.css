@@ -108,10 +108,6 @@ section .social-icon img {
   color: var(--green);
 }
 
-section .social-icon img:hover {
-  transform: rotate(360deg);
-}
-
 section .angle img {
   width: 30px;
 }
@@ -123,6 +119,7 @@ section .angle img {
 }
 
 section .social-icon img:hover {
+  transform: rotate(360deg);
   color: var(--dark-blue);
 }
 
