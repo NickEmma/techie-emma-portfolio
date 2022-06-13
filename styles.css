@@ -65,6 +65,7 @@ body {
   transform: scaleY(0);
   transform-origin: top;
 }
+
 .header .navbar.active {
   transform: scaleY(1);
 }
