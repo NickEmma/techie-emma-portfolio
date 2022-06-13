@@ -2,12 +2,16 @@
   "extends": ["stylelint-config-standard"],
   "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
   "rules": {
-    "at-rule-no-unknown": null,
-    "no-descending-specificity": [
+    "at-rule-no-unknown": [
       true,
       {
-        "ignore": "selectors-within-list",
-        "reportDisables": "true"
+        "ignoreAtRules": [
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen"
+        ]
       }
     ],
     "scss/at-rule-no-unknown": [
@@ -21,8 +25,15 @@
           "screen"
         ]
       }
-    ]
+    ],
+    "csstree/validator": true
   },
-  "csstree/validator": true,
-  "ignoreFiles": ["build/**", "dist/**", "**/reset*.css", "**/bootstrap*.css"]
+  "ignoreFiles": [
+    "build/**",
+    "dist/**",
+    "**/reset*.css",
+    "**/bootstrap*.css",
+    "**/*.js",
+    "**/*.jsx"
+  ]
 }
