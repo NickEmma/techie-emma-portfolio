@@ -6,7 +6,7 @@
 
 ## Built With
 
-Html & Css
+Html & Css & Javascript
 
 ## Getting Started
 
@@ -28,6 +28,12 @@ create .github/workflows folder in your first commit for the feature branch then
 - GitHub: [@githubhandle](https://github.com/NickEmma)
 - Twitter: [@twitterhandle](https://twitter.com/techieEmma)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/nicholas-emmanuel-6b9775207)
+
+👤 **Berkay Akbas**
+
+- GitHub: [@githubhandle](https://github.com/berkey-akbas)
+- Twitter: [@twitterhandle](https://twitter.com/_berkayakbas)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/berkay-akbas-a03b3b239/)
 
 ### Live Demo
 

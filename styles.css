@@ -46,14 +46,47 @@ body {
   color: rgb(59, 58, 58);
 }
 
-.header .navbar .menu {
-  font-size: 2rem;
-  font-weight: 600;
+.header #menu {
+  font-size: 3rem;
+  color: #333;
   cursor: pointer;
 }
 
-.header .navbar ul {
-  display: none;
+.header .navbar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  mix-blend-mode: normal;
+  padding: 2rem 0;
+  width: 100vw;
+  height: 90vh;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.header .navbar.active {
+  transform: scaleY(1);
+}
+
+.header .navbar a {
+  display: block;
+  border-radius: 0.5rem;
+  color: #3a4a42;
+  font-weight: 600;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  text-transform: capitalize;
+  font-size: 3.5rem;
+}
+
+.header .navbar a:hover {
+  color: var(--green);
+}
+
+.fa-times {
+  transform: rotate(180deg);
 }
 
 section .hero {
@@ -65,7 +98,6 @@ section .hero {
   width: 375px;
   height: 492px;
   background-repeat: repeat-y;
-  background-position: 100px right;
   background-size: cover;
 }
 
@@ -466,12 +498,22 @@ section .angle {
 
 @media (min-width: 768px) {
   .header {
-    background: #fff;
     width: 100%;
+    height: 10%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+  }
+
+  .header .navbar {
+    top: -50%;
+    left: 0;
+    right: 0;
+    background: none;
+    height: 9%;
+    transform: none;
     text-align: center;
   }
 
@@ -483,7 +525,7 @@ section .angle {
   }
 
   .header .navbar ul li a {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-left: 2rem;
     text-transform: capitalize;
     font-weight: 700;
@@ -491,7 +533,7 @@ section .angle {
   }
 
   .header .logo,
-  .header .menu {
+  .header #menu {
     display: none;
   }
 
