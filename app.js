@@ -7,11 +7,6 @@ menu.addEventListener('click', () => {
   navbar.classList.toggle('active');
 });
 
-// menu.onclick = () => {
-//   menu.classList.toggle('fa-times');
-//   navbar.classList.toggle('active');
-// };
-
 window.onscroll = () => {
   menu.classList.remove('fa-times');
 
