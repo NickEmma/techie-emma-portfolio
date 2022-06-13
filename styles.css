@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
 :root {
   --green: #36b37e;
@@ -13,7 +13,7 @@
   border: none;
   text-decoration: none;
   transition: all 0.2s linear;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 html {
@@ -98,17 +98,16 @@ section .hero {
   width: 375px;
   height: 492px;
   background-repeat: repeat-y;
-  background-position: 100px right;
   background-size: cover;
 }
 
-/* section .hero h1 {
+section .hero h1 {
   padding-top: 30px;
   font-size: 38px;
   font-weight: 700;
   text-align: center;
   color: var(--dark-blue);
-} */
+}
 
 section .hero h1 span {
   color: var(--green);
