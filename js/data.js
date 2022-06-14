@@ -5,7 +5,7 @@ const projectData = [
     technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
     id: 'firstProject',
     popupDescription: {
-      imageSrc: './images/popup.png',
+      imageSrc: './images/popup-desk.png',
       title: 'Keeping track of hundreds of components',
       technologies: ['Ruby on rails', 'css', 'javascript'],
       description:
@@ -20,7 +20,7 @@ const projectData = [
     technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
     id: 'secondProject',
     popupDescription: {
-      imageSrc: './images/popup.png',
+      imageSrc: './images/popup-desk.png',
       title: 'Keeping track of hundreds of components',
       technologies: ['Ruby on rails', 'css', 'javascript'],
       description:
@@ -35,7 +35,7 @@ const projectData = [
     technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
     id: 'thirdProject',
     popupDescription: {
-      imageSrc: './images/popup.png',
+      imageSrc: './images/popup-desk.png',
       title: 'Keeping track of hundreds of components',
       technologies: ['Ruby on rails', 'css', 'javascript'],
       description:
@@ -50,7 +50,7 @@ const projectData = [
     technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
     id: 'fourthProject',
     popupDescription: {
-      imageSrc: './images/popup.png',
+      imageSrc: './images/popup-desk.png',
       title: 'Keeping track of hundreds of components',
       technologies: ['Ruby on rails', 'css', 'javascript'],
       description:
@@ -65,7 +65,7 @@ const projectData = [
     technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
     id: 'fifthProject',
     popupDescription: {
-      imageSrc: './images/popup.png',
+      imageSrc: './images/popup-desk.png',
       title: 'Keeping track of hundreds of components',
       technologies: ['Ruby on rails', 'css', 'javascript'],
       description:
@@ -80,7 +80,7 @@ const projectData = [
     technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
     id: 'sixthProject',
     popupDescription: {
-      imageSrc: './images/popup.png',
+      imageSrc: './images/popup-desk.png',
       title: 'Keeping track of hundreds of components',
       technologies: ['Ruby on rails', 'css', 'javascript'],
       description:
@@ -93,8 +93,9 @@ const projectData = [
 
 for (let i = 0; i < projectData.length; i += 1) {
   let li = '';
-  for (let k = 0; k < projectData[i].technologies.length; k += 1)
+  for (let k = 0; k < projectData[i].technologies.length; k += 1) {
     li += `<li>${projectData[i].technologies[k]}</li>`;
+  }
 
   const data = document.createElement('div');
   data.classList.add('box');
@@ -126,10 +127,16 @@ function pop(event) {
 
   const popup = document.createElement('div');
   let liTag = '';
-  for (let j = 0; j < currentWork.popupDescription.technologies.length; j += 1)
+  for (
+    let j = 0;
+    j < currentWork.popupDescription.technologies.length;
+    j += 1
+  ) {
     liTag += `<li>${currentWork.popupDescription.technologies[j]}</li>`;
+  }
 
-  popup.classList.add('popup');
+  popup.classList.add('popup-container');
+  popup.classList.add('visible');
   popup.setAttribute('id', 'popup');
   popup.innerHTML = `
   <div class="popup">
@@ -142,7 +149,7 @@ function pop(event) {
     <h3 class="title">
     ${currentWork.popupDescription.title}
     </h3>
-    <ul class="popup-ul">
+    <ul class="pop-ul">
       ${liTag}
     </ul>
   <p class="text">
@@ -165,9 +172,8 @@ function pop(event) {
   newBody.appendChild(popup);
   document.body = newBody;
 
-  document.querySelector('#close').addEventListener('click', () => {
+  document.querySelector('i').addEventListener('click', () => {
     document.body = previousBody;
-    window.location.href = 'index.html.box-container';
   });
 
   document.querySelectorAll('.see-live').forEach((e) => {

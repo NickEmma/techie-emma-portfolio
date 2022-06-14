@@ -134,6 +134,13 @@ section .social-icon {
   list-style: none;
 }
 
+.project-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 28rem;
+  padding: 12px;
+}
+
 section .social-icon img {
   width: 20px;
   cursor: pointer;
@@ -276,7 +283,8 @@ section .angle {
 }
 
 .popup-container {
-  background-color: #fff;
+  background: #c1c7d0;
+  mix-blend-mode: multiply;
   position: fixed;
   top: 0;
   left: 0;
@@ -290,21 +298,22 @@ section .angle {
   border-radius: 16px;
 }
 
-/* .popup {
-  width: 92%;
-} */
-.project-image i {
-  position: absolute;
-  /* top: 10%; */
-  right: 2.2rem;
-  color: whitesmoke;
-  font-size: 3rem;
+.popup-container.visible {
+  display: flex;
 }
 
-.project-image img {
-  width: 100%;
-  object-fit: cover;
-  height: 28rem;
+.popup {
+  width: 92%;
+  background: #fff;
+}
+
+.project-image i {
+  position: absolute;
+  top: 5%;
+  right: 4rem;
+  color: #c1c7d0;
+  font-size: 4rem;
+  cursor: pointer;
 }
 
 .pop-desc .title {
@@ -312,18 +321,19 @@ section .angle {
   color: var(--dark-blue);
   font-weight: 700;
   line-height: 25px;
-  margin: 10px 0;
+  margin: 3px 10px;
 }
 
 .pop-ul {
   list-style: none;
-  padding-top: 1rem;
+  padding-top: 10px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .pop-ul li {
@@ -338,7 +348,7 @@ section .angle {
   font-size: 1.2rem;
   font-weight: lighter;
   line-height: 22px;
-  margin: 6px;
+  margin-left: 10px;
   color: #344563;
 }
 
@@ -347,6 +357,8 @@ section .angle {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .popup-buttons .see-live {
@@ -808,5 +820,16 @@ section .angle {
 
   .contact footer h4 {
     display: none;
+  }
+
+  .popup {
+    width: 60%;
+    background: #fff;
+  }
+
+  .project-image i {
+    font-size: 5rem;
+    right: 10rem;
+    color: #fff;
   }
 }
