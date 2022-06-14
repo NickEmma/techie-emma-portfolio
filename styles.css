@@ -275,6 +275,97 @@ section .angle {
   border-radius: 3px;
 }
 
+.popup-container {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  border-radius: 16px;
+}
+
+/* .popup {
+  width: 92%;
+} */
+.project-image i {
+  position: absolute;
+  /* top: 10%; */
+  right: 2.2rem;
+  color: whitesmoke;
+  font-size: 3rem;
+}
+
+.project-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 28rem;
+}
+
+.pop-desc .title {
+  font-size: 2rem;
+  color: var(--dark-blue);
+  font-weight: 700;
+  line-height: 25px;
+  margin: 10px 0;
+}
+
+.pop-ul {
+  list-style: none;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 10px;
+}
+
+.pop-ul li {
+  padding: 0.5rem;
+  border: 0.1rem solid #f7f2f2;
+  background: #d8dbda;
+  color: #3a4a42;
+  font-size: 1.2rem;
+}
+
+.pop-desc .text {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  line-height: 22px;
+  margin: 6px;
+  color: #344563;
+}
+
+.popup-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.popup-buttons .see-live {
+  margin-top: 10px;
+  display: inline-block;
+  border: 0.2rem solid var(--green);
+  color: #fff;
+  cursor: pointer;
+  background: var(--green);
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+}
+
+.popup-buttons i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
 .about {
   position: relative;
   overflow: hidden;
