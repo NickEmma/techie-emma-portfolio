@@ -19,11 +19,6 @@ const nameValue = document.querySelector('#name');
 const email = document.querySelector('#email');
 const messageValue = document.querySelector('#message');
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 7e5127dea8a7e1c3fa0d545b25bb16d2b2017d73
 const setError = (element, message) => {
   const inputBox = element.parentElement;
   const errorShow = inputBox.querySelector('.error');
