@@ -7,8 +7,8 @@ menu.addEventListener('click', () => {
   navbar.classList.toggle('active');
 });
 
-window.onscroll = () => {
-  menu.classList.remove('fa-times');
+// window.onscroll = () => {
+//   menu.classList.remove('fa-times');
 
-  navbar.classList.remove('active');
-};
+//   navbar.classList.remove('active');
+// };
