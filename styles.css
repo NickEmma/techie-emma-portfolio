@@ -598,6 +598,12 @@ section .angle {
   display: none;
 }
 
+.input-box .error {
+  margin: 0.5rem;
+  font-size: 13px;
+  color: #ff3434;
+}
+
 @media (min-width: 768px) {
   .header {
     width: 100%;
