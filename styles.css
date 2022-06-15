@@ -134,6 +134,13 @@ section .social-icon {
   list-style: none;
 }
 
+.project-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 28rem;
+  padding: 12px;
+}
+
 section .social-icon img {
   width: 20px;
   cursor: pointer;
@@ -240,6 +247,14 @@ section .angle {
   gap: 2rem;
 }
 
+.pop-ul li {
+  padding: 0.5rem;
+  border: 0.1rem solid #f7f2f2;
+  background: #d8dbda;
+  color: #3a4a42;
+  font-size: 1.2rem;
+}
+
 .works .box-container .box ul li {
   padding: 0.5rem;
   border: 0.1rem solid #f7f2f2;
@@ -273,6 +288,93 @@ section .angle {
   font-size: 1.3rem;
   padding: 1rem 1.5rem;
   border-radius: 3px;
+}
+
+.popup-container {
+  background: #c1c7d0;
+  mix-blend-mode: multiply;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  border-radius: 16px;
+}
+
+.popup-container.visible {
+  display: flex;
+}
+
+.popup {
+  width: 92%;
+  background: #fff;
+}
+
+.project-image i {
+  position: absolute;
+  top: 5%;
+  right: 4rem;
+  color: #c1c7d0;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.pop-desc .title {
+  font-size: 2rem;
+  color: var(--dark-blue);
+  font-weight: 700;
+  line-height: 25px;
+  margin: 3px 10px;
+}
+
+.pop-ul {
+  list-style: none;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.pop-desc .text {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  line-height: 22px;
+  margin-left: 10px;
+  color: #344563;
+}
+
+.popup-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.popup-buttons .see-live {
+  margin-top: 10px;
+  display: inline-block;
+  border: 0.2rem solid var(--green);
+  color: #fff;
+  cursor: pointer;
+  background: var(--green);
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+}
+
+.popup-buttons i {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 .about {
@@ -496,6 +598,12 @@ section .angle {
   display: none;
 }
 
+.input-box .error {
+  margin: 0.5rem;
+  font-size: 13px;
+  color: #ff3434;
+}
+
 @media (min-width: 768px) {
   .header {
     width: 100%;
@@ -717,5 +825,16 @@ section .angle {
 
   .contact footer h4 {
     display: none;
+  }
+
+  .popup {
+    width: 60%;
+    background: #fff;
+  }
+
+  .project-image i {
+    font-size: 5rem;
+    right: 10rem;
+    color: #fff;
   }
 }
