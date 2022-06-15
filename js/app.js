@@ -19,11 +19,6 @@ const nameValue = document.querySelector('#name');
 const email = document.querySelector('#email');
 const messageValue = document.querySelector('#message');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  validateForm();
-});
-
 const setError = (element, message) => {
   const inputBox = element.parentElement;
   const errorShow = inputBox.querySelector('.error');
@@ -70,3 +65,8 @@ const validateForm = () => {
     setSuccess(messageValue);
   }
 };
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  validateForm();
+});
