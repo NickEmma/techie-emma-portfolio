@@ -117,7 +117,9 @@ for (let i = 0; i < projectData.length; i += 1) {
   document.querySelector('.box-container').appendChild(data);
 }
 
-const previousBody = document.body;
+const previousBody = document.querySelector('body');
+const header = document.querySelector('.header');
+
 function pop(event) {
   const clickButton = event.target.getAttribute('id');
   let currentWork = '';
@@ -125,7 +127,7 @@ function pop(event) {
     if (clickButton === e.id) currentWork = e;
   });
 
-  const popup = document.createElement('div');
+  const popup = document.createElement('section');
   let liTag = '';
   for (
     let j = 0;
@@ -137,6 +139,7 @@ function pop(event) {
 
   popup.classList.add('popup-container');
   popup.classList.add('visible');
+  header.classList.toggle('display');
   popup.setAttribute('id', 'popup');
   popup.innerHTML = `
   <div class="popup">
@@ -168,12 +171,11 @@ function pop(event) {
   </div>
   `;
 
-  const newBody = document.createElement('body');
-  newBody.appendChild(popup);
-  document.body = newBody;
+  previousBody.appendChild(popup);
 
   document.querySelector('i').addEventListener('click', () => {
-    document.body = previousBody;
+    previousBody.removeChild(popup);
+    header.classList.remove('display');
   });
 
   document.querySelectorAll('.see-live').forEach((e) => {
