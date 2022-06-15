@@ -40,6 +40,10 @@ body {
   background: #fff;
 }
 
+.display {
+  display: none;
+}
+
 .header .logo {
   font-size: 2rem;
   font-weight: 600;
@@ -291,8 +295,8 @@ section .angle {
 }
 
 .popup-container {
-  background: #c1c7d0;
-  mix-blend-mode: multiply;
+  background: rgba(193, 199, 208, 0.4);
+  backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
   left: 0;
@@ -312,6 +316,8 @@ section .angle {
 .popup {
   width: 92%;
   background: #fff;
+  height: 92%;
+  border-radius: 16px;
 }
 
 .project-image i {
@@ -324,11 +330,11 @@ section .angle {
 }
 
 .pop-desc .title {
-  font-size: 2rem;
+  font-size: 4rem;
   color: var(--dark-blue);
   font-weight: 700;
-  line-height: 25px;
-  margin: 3px 10px;
+  line-height: 42px;
+  margin: 10px 10px;
 }
 
 .pop-ul {
@@ -344,9 +350,9 @@ section .angle {
 }
 
 .pop-desc .text {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
-  line-height: 22px;
+  line-height: 25px;
   margin-left: 10px;
   color: #344563;
 }
@@ -356,8 +362,10 @@ section .angle {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-left: 10px;
   margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .popup-buttons .see-live {
@@ -619,6 +627,10 @@ section .angle {
     text-align: center;
   }
 
+  .display {
+    display: none;
+  }
+
   .header .navbar ul {
     display: flex;
     list-style: none;
@@ -821,14 +833,39 @@ section .angle {
     display: none;
   }
 
+  .popup-container {
+    background: rgba(193, 199, 208, 0.4);
+    backdrop-filter: blur(5px);
+    width: 100%;
+  }
+
   .popup {
-    width: 60%;
+    width: 55%;
+    height: 90%;
     background: #fff;
+    padding: 30px;
   }
 
   .project-image i {
-    font-size: 5rem;
-    right: 10rem;
-    color: #fff;
+    font-size: 3rem;
+    top: 5%;
+    right: 25%;
+    color: #c1c7d0;
+  }
+
+  .popup-desc {
+    position: relative;
+  }
+
+  .popup-buttons {
+    position: absolute;
+    top: 48%;
+    right: 23%;
+    gap: 5px;
+  }
+
+  .popup-buttons .see-live {
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
   }
 }
