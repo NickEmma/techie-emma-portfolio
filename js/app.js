@@ -55,7 +55,6 @@ const validateForm = () => {
     setError(email, 'Email is required');
   } else if (!isMailValid(emailValue)) {
     setError(email, 'Email should be in lowercase');
-    return 0;
   } else {
     setSuccess(email);
   }
@@ -64,7 +63,7 @@ const validateForm = () => {
     setError(messageValue, 'description is required');
   } else {
     setSuccess(messageValue);
-    return form.submit();
+    form.submit();
   }
 };
 
