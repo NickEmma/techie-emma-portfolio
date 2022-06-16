@@ -380,6 +380,18 @@ section .angle {
   border-radius: 3px;
 }
 
+.popup-buttons .see-source {
+  margin-top: 10px;
+  display: inline-block;
+  border: 0.2rem solid var(--green);
+  color: #fff;
+  cursor: pointer;
+  background: var(--green);
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+}
+
 .popup-buttons i {
   color: #fff;
   font-size: 1.5rem;
@@ -871,6 +883,11 @@ section .angle {
   }
 
   .popup-buttons .see-live {
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
+  }
+
+  .popup-buttons .see-source {
     font-size: 1.2rem;
     padding: 1rem 1rem;
   }
