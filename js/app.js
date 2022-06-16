@@ -54,7 +54,7 @@ const validateForm = () => {
   if (emailValue === '') {
     setError(email, 'Email is required');
   } else if (!isMailValid(emailValue)) {
-    setError(email, 'provide a valid email address');
+    setError(email, 'Email should be in lowercase');
   } else {
     setSuccess(email);
   }
@@ -69,6 +69,7 @@ const validateForm = () => {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   validateForm();
+  form.submit();
 });
 
 // local storage path
