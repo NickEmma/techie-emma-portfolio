@@ -63,13 +63,13 @@ const validateForm = () => {
     setError(messageValue, 'description is required');
   } else {
     setSuccess(messageValue);
+    form.submit();
   }
 };
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   validateForm();
-  form.submit();
 });
 
 // local storage path
