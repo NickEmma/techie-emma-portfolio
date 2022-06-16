@@ -71,7 +71,7 @@ form.addEventListener('submit', (e) => {
   validateForm();
 });
 
-// form validation path
+// local storage path
 const nameForm = document.querySelector('#name');
 const emailForm = document.querySelector('#email');
 const messageForm = document.querySelector('#message');
